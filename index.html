@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://www.shutterstock.com/image-vector/motorcycle-part-logo-available-your-260nw-1866188191.jpg">
+    <title> Motorcycle Products</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e0e0;
+            color: #333;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #bbb;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #d6d6d6;
+            border-radius: 8px;
+        }
+        h2 {
+            border-bottom: 2px solid #bbb;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #bbb;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product h3 {
+            margin-top: 10px;
+            color: #000;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #f0f0f0;
+        }
+        table, th, td {
+            border: 1px solid #bbb;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #444;
+            color: #fff;
+        }
+        td img {
+            width: 95px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+            background-color: #e6e6e6;
+        }
+        .contact-form button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+        .add-to-cart {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .add-to-cart:hover {
+            background-color: #218838;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Motorcycle Products</h1>
+       <nav>
+    <a href="#top-products">&#128293; Top Products</a> <!-- 🔥 Fire -->
+    <a href="#all-products">&#128722; Products</a> <!-- 🛒 Shopping Cart -->
+    <a href="#about">&#8505; About Us</a> <!-- ℹ️ Information -->
+    <a href="#contacts">&#128222; Contacts</a> <!-- 📞 Telephone -->
+</nav>
+    </header>
+
+    <div class="container">
+        <section id="top-products">
+            <h2>Top Products</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://www.motolite.com/cdn/shop/products/MCB-LM_6beaab57-de27-4d11-a7b3-a9f20a0cbd46_533x.jpg?v=1662957699" alt="Battery">
+                    <h3>Battery</h3>
+                    <p>Powers electrical systems.</p>
+                </div>
+                <div class="product">
+                    <img src="https://sprocketspecialists.com/wp-content/uploads/2019/03/SprocketProduct.jpg" 
+alt=" Sprockets">
+                    <h3>Sprockets</h3>
+                    <p>Transfer power efficiently.</p>
+                </div>
+                <div class="product">
+                    <img src="https://ph-live-01.slatic.net/p/f065c15784e9ae26b8888e137e977e6b.jpg" alt="Mirrors">
+                       <h3>Mirrors</h3>
+                    <p>Improves rear visibility.</p>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/51JNHngN5NL._AC_UF894,1000_QL80_.jpg"
+alt="Seat Covers">
+                    <h3>Seat Covers</h3>
+                    <p>Protects and enchances the seat.</p>
+                </div>
+            
+        </section>
+
+   <section id="all-products">
+    <h2>List of Products</h2>
+ 
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Product Image</th>
+            <th>Product Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Add to Cart</th>
+        </tr>
+     
+       
+        <tr>
+            <td>1</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_hOuEAnNkGKCq1N6yW4kzMFYZ7WqdMHbrFQ&s" alt="Riding Gloves"></td>
+            <td>Riding Gloves</td>
+            <td>Better grip and safety.</td>
+            <td>&#8369;69.00</td>
+          <td><button class="add-to-cart">&#128722; Add to Cart</button></td>
+
+        </tr>
+      
+      
+        <tr>
+            <td>2</td>
+            <td><img src="https://sprocketspecialists.com/wp-content/uploads/2019/03/SprocketProduct.jpg" alt="Sprockets"></td>
+            <td>Sprockets</td>
+            <td>Transfers power efficiently.</td>
+            <td>&#8369;132.00</td>
+            <td><button class="add-to-cart">&#128722; Add to Cart</button></td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img src="https://www.pgfilters.com/wp-content/uploads/2023/02/What-is-the-Oil-Filters-Primary-Job_-1000x675-1.jpg" alt="Oil Filter"></td>
+            <td>Oil Filter</td>
+            <td>Keeps engine oil clean.</td>
+            <td>&#8369;49.00</td>
+<td><button class="add-to-cart">&#128722; Add to Cart</button></td>
+
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img src="https://www.motolite.com/cdn/shop/products/MCB-LM_6beaab57-de27-4d11-a7b3-a9f20a0cbd46_533x.jpg?v=1662957699" alt="Battery"></td>
+            <td>Battery</td>
+            <td>Powers electrical systems.</td>
+            <td>&#8369;390.00</td>
+        <td><button class="add-to-cart">&#128722; Add to Cart</button></td>
+
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img src="https://ph-live-01.slatic.net/p/f065c15784e9ae26b8888e137e977e6b.jpg" alt="Mirrors"></td>
+            <td>Mirrors</td>
+            <td>Improves rear visibility.</td>
+            <td>&#8369;369.00</td>
+            <td><button class="add-to-cart">&#128722; Add to Cart</button></td>
+
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlonqt3qkJzxGC4ED8JSkKB8uSkcuzAORKmg&s" alt="Throttle"></td>
+            <td>Throttle</td>
+            <td>Controls speed and power.</td>
+            <td>&#8369;175.00</td>
+         <td><button class="add-to-cart">&#128722; Add to Cart</button></td>
+
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img src="https://m.media-amazon.com/images/I/51JNHngN5NL._AC_UF894,1000_QL80_.jpg" alt="Seat Cover"></td>
+            <td>Seat Cover</td>
+            <td>Protects and enhances the seat.</td>
+            <td>&#8369;125.00</td>
+            <td><button class="add-to-cart">&#128722; Add to Cart</button></td>
+
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYEyZA6WmgXN1805dFv3x4zeb9zgH3aVNxAA&s" alt="Spark Plugs"></td>
+            <td>Spark Plugs</td>
+            <td>Ignites fuel-air mixture.</td>
+            <td>&#8369;90.00</td>
+         <td><button class="add-to-cart">&#128722; Add to Cart</button></td>
+
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIWY_tVxkBQIOjoizwqLQfzThcxT-EhkuuWg&s"></td>
+            <td>Brake Pads</td>
+            <td>Ensures safe braking.</td>
+            <td>&#8369;70.00</td>
+        <td><button class="add-to-cart">&#128722; Add to Cart</button></td>
+
+        </tr>
+       
+        <tr>
+            <td>10</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6UxN3dUVbUcJrex9mn-gIhnIZl4SA3zhA3g&s" alt="Grips"></td>
+            <td>Grips</td>
+            <td>Improves handlebar control.</td>
+            <td>&#8369;127.00</td>
+         <td><button class="add-to-cart">&#128722; Add to Cart</button></td>
+
+        </tr>
+        <tr>
+            <td>11</td>
+            <td><img src="https://images-na.ssl-images-amazon.com/images/I/71OypWrkVLL.jpg" alt="LED Headlights"></td>
+            <td>LED Headlights</td>
+            <td>Brighter and more energy-efficient than halogens.</td>
+            <td>&#8369;170.00</td>
+            <td><button class="add-to-cart">&#128722; Add to Cart</button></td>
+
+        </tr>
+        <tr>
+            <td>12</td>
+            <td><img src="https://www.partspro.ph/cdn/shop/products/HornMotor.jpg?v=1593999609" alt="Motorcycle Horn"></td>
+            <td>Motorcycle Horn</td>
+            <td>Louder and clearer sound for better safety.</td>
+            <td>&#8369;220.00</td>
+           <td><button class="add-to-cart">&#128722; Add to Cart</button></td>
+
+        </tr>
+    </table>
+</section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p> We are a reliable supplier of motorcycle parts, providing high-quality products for all types of bikes. Whether you need performance upgrades or replacement parts, we have a wide selection to suit your needs.
+<br>
+<br>
+Our goal is to keep motorcycles running smoothly. We get our parts from trusted manufacturers and have skilled technicians for maintenance and repairs. Whether it’s a small fix or a major repair, we are committed to getting you back on the road safely. </p>
+        </section>
+
+<h3 style="text-align:left-align;">CONTACT INFO</h3>
+<b>Address</b>: MC Motorcycle Shop and Repair, Manalad Street, Sto Cristo Sur, Gapan City <br>
+<b>Contact No</b>: 0946-076-1912 | 0921-257-1025 <br>
+<b>Facebook Name</b>:Liza Santiago| June Santiago <br>
+ <br>
+<h3 style="text-align:left-align;">WE’D LOVE TO HEAR FROM YOU</h3>
+For feedback and other concerns, please use our form
+
+</div>
+        <section id="contacts">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+<footer>
+    <p>&copy; &#127949;&#65039; Motorcycle Products. Developed by Princess Sheena Santiago.</p>
+</footer>
+
+</body>
+</html>
+
